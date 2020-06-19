@@ -1,0 +1,8 @@
+1.使用Etchr软件将mac镜像写入u盘,并使用DiskGenius对预安装mac的盘的esp分区扩容至300m。
+  
+1.1 用系统自带的磁盘管理工具压缩出60g空间作为mac安装盘，如果是另一块硬盘则无需压缩，直接将esp分区分配300m。新硬盘创建esp引导分区方法：https://jingyan.baidu.com/article/e75aca856f296c142edac614.html
+1.2 分配的esp分区没有盘符故不可以直接访问，可使用DG分配盘符访问完再删去盘符恢复或使用notepad打开文件路径。
+
+2.添加clover引导：将clover文件夹复制到ESP分区的EFI文件夹下，同时使用BOOTICE添加clover的efi引导文件(uefi-〉修改启动序列)
+如果找不到分区就对ESP分区分配盘符。
+3.重启安装
