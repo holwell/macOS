@@ -6,3 +6,4 @@
 2.添加clover引导：将clover文件夹复制到ESP分区的EFI文件夹下，同时使用BOOTICE添加clover的efi引导文件(uefi-〉修改启动序列)
 如果找不到分区就对ESP分区分配盘符。
 3.重启安装
+4.后续完善：https://www.bilibili.com/video/BV1ub411k7yf?t=643 时间10分10秒
